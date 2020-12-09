@@ -6,14 +6,13 @@ LIBPATH   ?=
 CURSESLIB ?= ncursesw
 LIBS      ?= -l$(CURSESLIB) -lutil
 
-all: mtm
+all: cmtm
 
-mtm: vtparser.c mtm.c pair.c config.h
+cmtm: vtparser.c mtm.c pair.c config.h
 	$(CC) $(CFLAGS) $(FEATURES) -o $@ $(HEADERS) vtparser.c mtm.c pair.c $(LIBPATH) $(LIBS)
-	strip mtm
 
 config.h: config.def.h
 	cp -i config.def.h config.h
 
 clean:
-	rm -f *.o mtm
+	rm -f *.o cmtm
