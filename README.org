@@ -39,7 +39,7 @@ tic -x -s -o ${DESTDIR}/share/terminfo mtm.ti
 #+BEGIN_SRC shell
 
 mkdir -pv ${DESTDIR}/share/man/man1/
-cp -v ./mtm.1 ${DESTDIR}/share/man/man1/
+cp -v ./cmtm.1 ${DESTDIR}/share/man/man1/
 
 #+END_SRC
 
