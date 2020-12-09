@@ -21,7 +21,7 @@ make
 #+BEGIN_SRC shell
 
 mkdir -pv ${DESTDIR}/bin
-cp -v ./mtm ${DESTDIR}/bin/
+cp -v ./cmtm ${DESTDIR}/bin/
 
 #+END_SRC
 
