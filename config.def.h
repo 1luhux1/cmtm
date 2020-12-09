@@ -35,9 +35,11 @@
 /* The default command prefix key, when modified by cntrl.
  * This can be changed at runtime using the '-c' flag.
  */
+/* 快捷鍵前綴 Ctrl + */
 #define COMMAND_KEY 'g'
 
 /* The change focus keys. */
+/* 移動終端焦點 */
 #define MOVE_UP         KEY(L'k')
 #define MOVE_DOWN       KEY(L'j')
 #define MOVE_RIGHT      KEY(L'l')
@@ -45,19 +47,26 @@
 #define MOVE_OTHER      KEY(L'o')
 
 /* The split terminal keys. */
+/* 豎向分割終端 */
 #define HSPLIT KEY(L's')
+/* 橫向分割終端 */
 #define VSPLIT KEY(L'v')
 
 /* The delete terminal key. */
+/* 刪除終端 */
 #define DELETE_NODE KEY(L'w')
 
 /* The force redraw key. */
+/* 強制重繪屏幕 */
 #define REDRAW KEY(L'r')
 
 /* The scrollback keys. */
-#define SCROLLUP CODE(KEY_PPAGE)
-#define SCROLLDOWN CODE(KEY_NPAGE)
-#define RECENTER CODE(KEY_END)
+/* 向上翻頁 */
+#define SCROLLUP CODE(KEY_UP)
+/* 向下翻頁 */
+#define SCROLLDOWN CODE(KEY_DOWN)
+/* 移動到最底部 */
+#define RECENTER CODE(KEY_RIGHT)
 
 /* The path for the wide-character curses library. */
 #ifndef NCURSESW_INCLUDE_H
