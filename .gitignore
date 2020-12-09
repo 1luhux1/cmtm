@@ -4,4 +4,4 @@ config.h
 *.swp
 
 *.o
-mtm
+cmtm
