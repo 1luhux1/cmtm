@@ -1,0 +1,46 @@
+* Micro Terminal Multiplexer
+
+微型終端復用器
+
+forked from github.com/deadpixi/mtm
+
+** 編譯
+
+#+BEGIN_SRC
+
+make 
+
+#+END_SRC
+
+** 安裝
+
+將DESTDIR指定爲您需要的位置
+
+安裝二進制文件:
+
+#+BEGIN_SRC shell
+
+mkdir -pv ${DESTDIR}/bin
+cp -v ./mtm ${DESTDIR}/bin/
+
+#+END_SRC
+
+安裝terminfo文件:
+
+#+BEGIN_SRC shell
+
+mkdir -pv ${DESTDIR}/share/terminfo
+tic -x -s -o ${DESTDIR}/share/terminfo mtm.ti
+
+#+END_SRC
+
+安裝man文檔(可選)
+
+#+BEGIN_SRC shell
+
+mkdir -pv ${DESTDIR}/share/man/man1/
+cp -v ./mtm.1 ${DESTDIR}/share/man/man1/
+
+#+END_SRC
+
+** 常見問題
