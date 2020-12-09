@@ -45,7 +45,7 @@
 #define MOVE_OTHER      KEY(L'o')
 
 /* The split terminal keys. */
-#define HSPLIT KEY(L'h')
+#define HSPLIT KEY(L's')
 #define VSPLIT KEY(L'v')
 
 /* The delete terminal key. */
